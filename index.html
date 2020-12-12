@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Employee Interests Survey Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Employee Interests Survey Form</h1>
+    <form action="get" class="emp-int-form">
+      <div class="emp-int-form"> 
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
+      <br><br>
+      <div class="emp-int-form"> 
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" placeholder="Enter your department">
+      </div>
+      <br><br>
+      <div class="emp-int-form"> 
+        <label for="about">Tell us a little about yourself:</label><br>
+        <textarea name="about" id="about" cols="25" rows="5"></textarea>
+      </div>
+      <br><br>
+      <div class="emp-int-form"> 
+        <label for="exercise">Do you exercise at home?</label>
+        <input type="radio" id="yes" name="exercise" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="exercise" value="no">
+        <label for="no">No</label>
+      </div>
+      <br><br>
+      <div class="emp-int-form"> 
+        <label for="fav-topics">How do you like to read about your favorite topics?</label>
+        <br>
+        <input type="checkbox" name="phone-app" id="phone-app">
+        <label for="phone-app">Phone Apps</label>
+        <input type="checkbox" name="online" id="online">
+        <label for="online">Online</label>
+        <input type="checkbox" name="books" id="books">
+        <label for="books">Books</label>
+        <input type="checkbox" name="magazines" id="magazines">
+        <label for="magazines">Magazines</label>
+      </div>
+      <br><br>
+      <div class="emp-int-form"> 
+        <select name="fav-music" id="fav-music">
+          <option value="choose" selected disabled>Choose...</option>
+          <option value="jazz">Jazz</option>
+          <option value="rock">Rock</option>
+          <option value="country">Country</option>
+          <option value="hip-hop">Hip-Hop</option>
+          <option value="pop">Pop</option>
+        </select>
+      </div>
+      <br><br>        
+        <label for="fav-music">What is your favorite music genre?</label>
+        <div class="emp-int-form"> 
+          <input type="submit" value="Submit">
+        </div>        
+    </form>
+  </body>
+</html>
